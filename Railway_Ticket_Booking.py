@@ -3,9 +3,7 @@ import string
 
 class Train:
     """
-    A class to represent a Train in Indian Railways.
-    Provides methods to book tickets, check seat availability,
-    get fare information, and retrieve ticket details by PNR.
+    A class to represent a Train in Indian Railways.   Provides methods to book tickets, check seat availability, get fare information, and retrieve ticket details by PNR.
     """
 
     def __init__(self, train_name, total_seats, fare):
@@ -15,12 +13,10 @@ class Train:
         self.fare = fare
         self.booked_tickets = {}  # Store tickets with PNR as key
 
-    def generate_pnr(self):
-        """Generate a random 6-character alphanumeric PNR."""
+    def generate_pnr(self):  #Generate a random 6-character alphanumeric PNR
         return ''.join(random.choices(string.ascii_uppercase + string.digits, k=6))
 
-    def book_ticket(self):
-        """Book a ticket if seats are available."""
+    def book_ticket(self):  #Book a ticket if seats are available.
         if self.available_seats > 0:
             print("\n--- Ticket Booking ---")
             name = input("Enter Passenger Name: ").strip()
@@ -52,21 +48,18 @@ class Train:
         else:
             print("❌ Sorry, No seats available!")
 
-    def get_status(self):
-        """Show train seat availability status."""
+    def get_status(self):  #Show train seat availability status.
         print("\n--- Train Status ---")
         print(f"Train Name     : {self.train_name}")
         print(f"Total Seats    : {self.total_seats}")
         print(f"Available Seats: {self.available_seats}")
 
-    def get_fare_info(self):
-        """Show fare information of the train."""
+    def get_fare_info(self):  #Show fare information of the train.
         print("\n--- Fare Information ---")
         print(f"Train Name : {self.train_name}")
         print(f"Fare       : Rs.{self.fare} per passenger")
 
-    def check_ticket_by_pnr(self, pnr):
-        """Retrieve ticket details using PNR."""
+    def check_ticket_by_pnr(self, pnr):  #Retrieve ticket details using PNR.
         ticket = self.booked_tickets.get(pnr)
         if ticket:
             print("\n--- Ticket Details ---")
@@ -75,8 +68,7 @@ class Train:
         else:
             print("❌ No ticket found with this PNR!")
 
-    def print_ticket(self, ticket):
-        """Print formatted ticket details."""
+    def print_ticket(self, ticket):  #Print formatted ticket details.
         print("--------------------------------------")
         for key, value in ticket.items():
             print(f"{key:<15}: {value}")
@@ -149,3 +141,4 @@ while True:
 
     else:
         print("❌ Invalid choice, please try again.")
+
