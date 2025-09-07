@@ -54,6 +54,22 @@ Save ticket history to a file (CSV/JSON)
 
 GUI version using Tkinter/Flask
 
+------------------------------------------------------------------------------------------
+
+🛠️ Requirements
+
+= Python 3.x installed
+
+= No extra libraries needed
+
+-----------------------------------------------------------------------------------------
+
+👩‍💻 Developer
+
+=Jidnyasa Pawar
+
+= www.linkedin.com/in/jidnyasa-pawar-505639301
+
 
 
 
