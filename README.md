@@ -1,6 +1,6 @@
-# 🚆 Indian Railways Ticket Booking System (Python)
+# 🚆 Railway Ticket Booking System (Python)
 
-A menu-driven **Python console application** that simulates ticket booking in Indian Railways with PNR system, seat availability, and fare info.  
+A menu-driven **Python console application** that simulates ticket booking in Railway with PNR system, seat availability, and fare info.  
 This project demonstrates **Object-Oriented Programming (OOP)** concepts in Python.
 
 -------------------------------------------------------------------------------------------
